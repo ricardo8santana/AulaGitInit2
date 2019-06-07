@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sem título</title>
+<!-- arquivo local -->
+<!--<script>
+	</script>
+	-->
+	<!--  CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+		
+		//window.onload = function (){}
+		
+		$(document).ready(function(){
+		//pegar  o botao como referencia 
+		
+		$('button').eq(0).click(function(){
+			//pegar o ponto de referencia da div
+			//document.getElementById('caixa');
+			
+			//document.getElementByTagName('div').style;
+			
+			$('#caixa').css({
+				backgroundColor: '#000000',
+				opacity : '0.1',
+				width : '300px'
+				
+			});
+			
+		});
+			
+			//é função/metodo
+		$('button').eq(1).click(function(){
+			//referencia pela class
+			$('caixa').css(
+			'backgroundColor' , '#a0b0c0'
+			);
+		});	
+		
+		
+	});
+		
+	</script>
+		<style type="text/css">
+			#caixa , .caixa{
+				width: 200px;
+				height: 200px;
+				background-color: rgba(77,27,197,1.00)
+				
+				
+			}
+			
+			
+	</style>
+		
+</head>
+
+<body>
+
+<div id="caixa">
+
+	
+</div>
+<button>Mudar</button>
+
+<div class="caixa">
+
+	
+</div>
+<button>Mudar</button>
+</body>
+</html>
